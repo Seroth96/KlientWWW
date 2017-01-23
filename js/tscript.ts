@@ -16,14 +16,16 @@ class Api {
 
 
     public isLogged(){
-        if(this.token.length > 0)
-            return true;
+        if(this.token != "") {
+            if (this.token.length > 0)
+                return true;
+        }
         return false
     }
 
     public logout() {
         this.token = "";
-        document.location.replace("login.html");
+        document.location.replace("NotesApp.html");
     }
 
     public getCurrentNote(){
@@ -50,7 +52,6 @@ class Api {
         await fetch(request).then(async function (response) {
             await response.json().then(function (data) {
                 that.token = data.access_token;
-                console.log(data);
             });
         });
     }
@@ -70,7 +71,7 @@ class Api {
         });
         await fetch(request).then(async function (response) {
             await response.json().then(function (data) {
-                console.log(data);
+                alert(data.message);
             });
         });
     }
@@ -86,8 +87,6 @@ class Api {
         });
         await fetch(request).then(async function (response) {
             await response.json().then(function (row) {
-                 console.log(row);
-                 console.log(row.notes.length);
                  for(let i=0; i<row.notes.length; i++){
                     notes.push(new Note(row.notes[i].body,
                         row.notes[i].title,
@@ -114,8 +113,6 @@ class Api {
         });
         await fetch(request).then(async function (response) {
             await response.json().then(function (row) {
-                console.log(row);
-                console.log(row.notes.length);
                 for(let i=0; i<row.notes.length; i++){
                     notes.push(new Note(row.notes[i].body,
                         row.notes[i].title,
@@ -142,8 +139,6 @@ class Api {
         });
         await fetch(request).then(async function (response) {
             await response.json().then(function (row) {
-                console.log(row);
-                console.log(row.notes.length);
                 for(let i=0; i<row.notes.length; i++){
                     notes.push(new Note(row.notes[i].body,
                         row.notes[i].title,
@@ -183,27 +178,6 @@ class Api {
         });
 
     }
-
-    // public async getUsersList() {
-    //     let users: User[] = [];
-    //     let url = this.getUrl('/users/');
-    //     let request = new Request(url, {
-    //         method: 'GET',
-    //         headers: new Headers({
-    //             'token': this.token
-    //         })
-    //     });
-    //     await fetch(request).then(async function (response) {
-    //         await response.json().then(function (row) {
-    //             for (let raw of row) {
-    //                 users.push(new User(raw.uid, raw.username));
-    //             }
-    //             return users;
-    //         });
-    //         return users;
-    //     });
-    //     return users;
-    // }
 
     public async send(note: Note) {
         let url = this.getUrl('/api/Notes');
@@ -279,7 +253,7 @@ class Note{
     private user_id: number;
 
     public constructor(body: string = "No content", title: string = "No subject",
-                       category: string = "", tag: string = "inbox", id: number = 0, user_id: number = 0) {
+                       category: string = "", tag: string = "", id: number = 0, user_id: number = 0) {
         this.body = body;
 
         this.title = title;
@@ -372,8 +346,6 @@ class NotesBox {
         await this.api.editNote(id, note);
         await this.reload();
     }
-
-
 }
 
 class Application {
@@ -383,15 +355,65 @@ class Application {
 
     constructor(username: string, password: string) {
         this.api = new Api(username, password);
-        this.init();
+        if(username !="" && password!="")
+            this.login(username,password);
     }
 
-    private async init() {
+    public  async init() {
+        this.initializeView();
         this.mailList = new VList();
-        await this.api.register();
-        await this.api.login();
         this.data = new NotesBox(this.api);
         await this.getNotesList();
+    }
+
+    public async register(username: string, password: string){
+        this.api = new Api(username, password);
+        await this.api.register();
+    }
+
+    public initializeView(){
+        document.body.innerHTML = `
+                        <nav>
+                            <button id="NewNote" class="btn">New note</button>
+                            <button id="Logout" class="btn">Logout</button>
+                        </nav>
+                        
+                        <section class="filter">
+                            <ul id="menu">
+                                <li><select id="SortBy">
+                                    <option value="Category">Category</option>
+                                    <option value="Tag">Tag</option>
+                                </select></li>
+                                <li><input id="SortCredentials" type="text"></li>
+                                <li><button id="Filter" class="btn">Filter</button></li>
+                            </ul>
+                        </section>
+                        
+                        <section class="container">
+                            <div id="note" class="left-half">
+                        
+                            </div>
+                        
+                            <div id="noteList" class="right-half">
+                        
+                        
+                            </div>
+                        </section>
+                        
+                        
+                        <footer>
+                            &copy; All rights reserved
+                        </footer>
+            `;
+
+    }
+
+    public async login(username: string, password: string){
+        this.api = new Api(username, password);
+        await this.api.login();
+       if(this.isLogged())
+           this.init();
+
     }
 
     public logout() {
@@ -399,6 +421,9 @@ class Application {
     }
     public getData(){
         return this.data;
+    }
+    public async isLogged(){
+        return this.api.isLogged();
     }
 
     public async getNotesList(){
@@ -439,34 +464,35 @@ class Application {
 }
 
 
-let app = new Application("bach", "to-nie-ja");
+ let app = new Application("","");
 
 
 if(document.getElementById('#container_login') == null ) {
+
 
     document.querySelector('#submit_register').addEventListener('click', (e) => {
 
         let username = (<HTMLInputElement>document.getElementById("login")).value;
         let password = (<HTMLInputElement>document.getElementById("password")).value;
 
-        let app = new Application(username, password);
+        app.register(username,password);
 
-        console.log("klik!");
 
 
     });
 
 
     document.querySelector('#submit_login').addEventListener('click', (e) => {
-
         let username = (<HTMLInputElement>document.getElementById("login")).value;
         let password = (<HTMLInputElement>document.getElementById("password")).value;
 
-        console.log("klik!2");
-        document.location.href = "index_pl.html";
+        app = new Application(username, password);
+
+
 
 
     });
+
 }
 
 

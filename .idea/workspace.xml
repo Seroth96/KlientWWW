@@ -18,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.html">
+      <file leaf-file-name="NotesApp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NotesApp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -31,8 +31,8 @@
       <file leaf-file-name="index_pl.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_pl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="690">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -41,20 +41,37 @@
       <file leaf-file-name="tscript.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tscript.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="402" column="0" lean-forward="true" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
+            <state relative-caret-position="274">
+              <caret line="114" column="55" lean-forward="false" selection-start-line="114" selection-start-column="55" selection-end-line="114" selection-end-column="55" />
               <folding>
+                <element signature="n#!!block;n#logout#0;n#Api#0" expanded="false" />
                 <element signature="n#!!block;n#login#0;n#Api#0" expanded="false" />
-                <element signature="n#!!block;n#register#0;n#Api#0" expanded="false" />
                 <element signature="n#!!block;n#getNotesList#0;n#Api#0" expanded="false" />
-                <element signature="n#!!block;n#getNotesListByCategory#0;n#Api#0" expanded="false" />
                 <element signature="n#!!block;n#getNotesListByTag#0;n#Api#0" expanded="false" />
                 <element signature="n#!!block;n#getNote#0;n#Api#0" expanded="false" />
-                <element signature="e#5709#5741#0" expanded="false" />
                 <element signature="n#!!block;n#send#0;n#Api#0" expanded="false" />
                 <element signature="n#!!block;n#editNote#0;n#Api#0" expanded="false" />
                 <element signature="n#!!block;n#delete#0;n#Api#0" expanded="false" />
                 <element signature="n#Note#0" expanded="false" />
+                <element signature="n#!!block;n#initializeView#0;n#Application#0" expanded="false" />
+                <element signature="n#!!block;n#getNotesList#0;n#Application#0" expanded="false" />
+                <element signature="n#!!block;n#getNotesListByTag#0;n#Application#0" expanded="false" />
+                <element signature="n#!!block;n#getNotesListByCategory#0;n#Application#0" expanded="false" />
+                <element signature="n#!!block;n#sendNote#0;n#Application#0" expanded="false" />
+                <element signature="n#!!block;n#getNote#0;n#Application#0" expanded="false" />
+                <element signature="n#!!block;n#deleteNote#0;n#Application#0" expanded="false" />
+                <element signature="n#!!block;n#editNote#0;n#Application#0" expanded="false" />
+                <element signature="e#13433#13655#0" expanded="false" />
+                <marker date="1485169855026" expanded="true" signature="10412:10598" ph="..." />
+                <marker date="1485169855026" expanded="true" signature="10672:11207" ph="..." />
+                <marker date="1485169855026" expanded="true" signature="10715:11172" ph="..." />
+                <marker date="1485169855026" expanded="true" signature="10752:10967" ph="..." />
+                <marker date="1485169855026" expanded="true" signature="10772:10962" ph="..." />
+                <marker date="1485169855026" expanded="true" signature="11284:11618" ph="..." />
+                <marker date="1485169855026" expanded="true" signature="11346:11406" ph="..." />
+                <marker date="1485169855026" expanded="true" signature="11498:11583" ph="..." />
+                <marker date="1485169855026" expanded="true" signature="11701:11790" ph="..." />
+                <marker date="1485169855026" expanded="true" signature="11731:11737" ph="©" />
               </folding>
             </state>
           </provider>
@@ -63,29 +80,19 @@
       <file leaf-file-name="VMessages.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/VMessages.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="193" column="20" lean-forward="true" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
               <folding>
-                <element signature="e#4824#5456#0" expanded="false" />
-                <element signature="n#!!block;n#setNote#0;n#VList#0" expanded="false" />
-                <marker date="1485129834860" expanded="true" signature="507:702" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="507:916" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="1428:1618" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="1885:2325" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="3228:4365" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="3271:4365" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="3356:4365" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="3445:4365" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="3530:4365" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="3696:4365" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="3775:4365" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="3854:4365" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="3934:4365" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="4395:4697" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="4415:4590" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="4432:4569" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="4610:4680" ph="..." />
-                <marker date="1485129834860" expanded="true" signature="6099:6555" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="504:699" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="504:913" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="1425:1615" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="1879:2319" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="4386:4688" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="4406:4581" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="4423:4560" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="4601:4671" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="6128:6490" ph="..." />
+                <marker date="1485169942402" expanded="true" signature="6128:6757" ph="..." />
               </folding>
             </state>
           </provider>
@@ -94,8 +101,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="86" column="15" lean-forward="true" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+            <state relative-caret-position="452">
+              <caret line="222" column="21" lean-forward="true" selection-start-line="222" selection-start-column="21" selection-end-line="222" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -107,13 +114,22 @@
     <findStrings>
       <find>saving</find>
       <find>dl</find>
+      <find>newm</find>
+      <find>#mess</find>
+      <find>#mail</find>
+      <find>box</find>
+      <find>console</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index_pl.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/tscript.ts" />
         <option value="$PROJECT_DIR$/js/VMessages.ts" />
       </list>
@@ -126,8 +142,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
+    <option name="x" value="961" />
+    <option name="width" value="959" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
@@ -145,8 +161,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,22 +310,22 @@
       <workItem from="1485109918379" duration="787000" />
       <workItem from="1485115936125" duration="89000" />
       <workItem from="1485116036922" duration="13404000" />
+      <workItem from="1485160855039" duration="8795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15202000" />
+    <option name="totallyTimeSpent" value="23997000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
-    <editor active="false" />
+    <frame x="961" y="0" width="959" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22033899" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15058325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -320,6 +336,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -344,7 +361,87 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login.html">
+    <entry file="file://$PROJECT_DIR$/NotesApp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_pl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tscript.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="402" column="0" lean-forward="true" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#logout#0;n#Api#0" expanded="false" />
+            <element signature="n#!!block;n#login#0;n#Api#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesList#0;n#Api#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesListByTag#0;n#Api#0" expanded="false" />
+            <element signature="n#!!block;n#getNote#0;n#Api#0" expanded="false" />
+            <element signature="n#!!block;n#send#0;n#Api#0" expanded="false" />
+            <element signature="n#!!block;n#editNote#0;n#Api#0" expanded="false" />
+            <element signature="n#!!block;n#delete#0;n#Api#0" expanded="false" />
+            <element signature="n#Note#0" expanded="false" />
+            <element signature="n#!!block;n#initializeView#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesList#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesListByTag#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesListByCategory#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#sendNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#deleteNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#editNote#0;n#Application#0" expanded="false" />
+            <element signature="e#13433#13655#0" expanded="false" />
+            <marker date="1485169855026" expanded="true" signature="10412:10598" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10672:11207" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10715:11172" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10752:10967" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10772:10962" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11284:11618" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11346:11406" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11498:11583" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11701:11790" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11731:11737" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/VMessages.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1485169942402" expanded="true" signature="504:699" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="504:913" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="1425:1615" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="1879:2319" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4386:4688" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4406:4581" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4423:4560" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4601:4671" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="6128:6490" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="6128:6757" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="15" lean-forward="true" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NotesApp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
@@ -357,17 +454,34 @@
         <state relative-caret-position="2210">
           <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
           <folding>
+            <element signature="n#!!block;n#logout#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#login#0;n#Api#0" expanded="false" />
-            <element signature="n#!!block;n#register#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#getNotesList#0;n#Api#0" expanded="false" />
-            <element signature="n#!!block;n#getNotesListByCategory#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#getNotesListByTag#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#getNote#0;n#Api#0" expanded="false" />
-            <element signature="e#5709#5741#0" expanded="false" />
             <element signature="n#!!block;n#send#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#editNote#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#delete#0;n#Api#0" expanded="false" />
             <element signature="n#Note#0" expanded="false" />
+            <element signature="n#!!block;n#initializeView#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesList#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesListByTag#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesListByCategory#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#sendNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#deleteNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#editNote#0;n#Application#0" expanded="false" />
+            <element signature="e#13433#13655#0" expanded="false" />
+            <marker date="1485169855026" expanded="true" signature="10412:10598" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10672:11207" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10715:11172" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10752:10967" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10772:10962" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11284:11618" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11346:11406" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11498:11583" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11701:11790" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11731:11737" ph="©" />
           </folding>
         </state>
       </provider>
@@ -377,26 +491,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4824#5456#0" expanded="false" />
-            <element signature="n#!!block;n#setNote#0;n#VList#0" expanded="false" />
-            <marker date="1485129834860" expanded="true" signature="507:702" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="507:916" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="1428:1618" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="1885:2325" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3228:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3271:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3356:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3445:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3530:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3696:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3775:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3854:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3934:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="4395:4697" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="4415:4590" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="4432:4569" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="4610:4680" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="6099:6555" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="504:699" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="504:913" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="1425:1615" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="1879:2319" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4386:4688" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4406:4581" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4423:4560" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4601:4671" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="6128:6490" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="6128:6757" ph="..." />
           </folding>
         </state>
       </provider>
@@ -405,11 +509,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
+    <entry file="file://$PROJECT_DIR$/NotesApp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
@@ -422,17 +525,34 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#!!block;n#logout#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#login#0;n#Api#0" expanded="false" />
-            <element signature="n#!!block;n#register#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#getNotesList#0;n#Api#0" expanded="false" />
-            <element signature="n#!!block;n#getNotesListByCategory#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#getNotesListByTag#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#getNote#0;n#Api#0" expanded="false" />
-            <element signature="e#5709#5741#0" expanded="false" />
             <element signature="n#!!block;n#send#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#editNote#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#delete#0;n#Api#0" expanded="false" />
             <element signature="n#Note#0" expanded="false" />
+            <element signature="n#!!block;n#initializeView#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesList#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesListByTag#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesListByCategory#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#sendNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#deleteNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#editNote#0;n#Application#0" expanded="false" />
+            <element signature="e#13433#13655#0" expanded="false" />
+            <marker date="1485169855026" expanded="true" signature="10412:10598" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10672:11207" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10715:11172" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10752:10967" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10772:10962" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11284:11618" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11346:11406" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11498:11583" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11701:11790" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11731:11737" ph="©" />
           </folding>
         </state>
       </provider>
@@ -441,11 +561,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
+    <entry file="file://$PROJECT_DIR$/NotesApp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -460,19 +579,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Poczta/FINAL/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,71 +590,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="305" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NotesApp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="86" column="15" lean-forward="true" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+        <state relative-caret-position="452">
+          <caret line="222" column="21" lean-forward="true" selection-start-line="222" selection-start-column="21" selection-end-line="222" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index_pl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="690">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/tscript.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="402" column="0" lean-forward="true" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
+        <state relative-caret-position="274">
+          <caret line="114" column="55" lean-forward="false" selection-start-line="114" selection-start-column="55" selection-end-line="114" selection-end-column="55" />
           <folding>
+            <element signature="n#!!block;n#logout#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#login#0;n#Api#0" expanded="false" />
-            <element signature="n#!!block;n#register#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#getNotesList#0;n#Api#0" expanded="false" />
-            <element signature="n#!!block;n#getNotesListByCategory#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#getNotesListByTag#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#getNote#0;n#Api#0" expanded="false" />
-            <element signature="e#5709#5741#0" expanded="false" />
             <element signature="n#!!block;n#send#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#editNote#0;n#Api#0" expanded="false" />
             <element signature="n#!!block;n#delete#0;n#Api#0" expanded="false" />
             <element signature="n#Note#0" expanded="false" />
+            <element signature="n#!!block;n#initializeView#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesList#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesListByTag#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNotesListByCategory#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#sendNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#getNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#deleteNote#0;n#Application#0" expanded="false" />
+            <element signature="n#!!block;n#editNote#0;n#Application#0" expanded="false" />
+            <element signature="e#13433#13655#0" expanded="false" />
+            <marker date="1485169855026" expanded="true" signature="10412:10598" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10672:11207" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10715:11172" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10752:10967" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="10772:10962" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11284:11618" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11346:11406" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11498:11583" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11701:11790" ph="..." />
+            <marker date="1485169855026" expanded="true" signature="11731:11737" ph="©" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/VMessages.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="476">
+          <caret line="193" column="20" lean-forward="true" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
           <folding>
-            <element signature="e#4824#5456#0" expanded="false" />
-            <element signature="n#!!block;n#setNote#0;n#VList#0" expanded="false" />
-            <marker date="1485129834860" expanded="true" signature="507:702" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="507:916" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="1428:1618" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="1885:2325" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3228:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3271:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3356:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3445:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3530:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3696:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3775:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3854:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="3934:4365" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="4395:4697" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="4415:4590" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="4432:4569" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="4610:4680" ph="..." />
-            <marker date="1485129834860" expanded="true" signature="6099:6555" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="504:699" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="504:913" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="1425:1615" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="1879:2319" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4386:4688" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4406:4581" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4423:4560" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="4601:4671" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="6128:6490" ph="..." />
+            <marker date="1485169942402" expanded="true" signature="6128:6757" ph="..." />
           </folding>
         </state>
       </provider>

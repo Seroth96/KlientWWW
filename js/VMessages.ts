@@ -3,7 +3,7 @@
  */
 class ViewNote {
     private note: Note;
-    private selector = document.querySelector("#message");
+    private selector = document.querySelector("#note");
     public constructor(note: Note){
         this.note = note;
         this.selector.innerHTML = this.show();
@@ -65,7 +65,7 @@ class VNoteList {
 }
 
 class VSavingNote {
-    private selector = document.querySelector('#message');
+    private selector = document.querySelector('#note');
 
     public  constructor(){
         this.show();
@@ -89,7 +89,7 @@ class VSavingNote {
 `;
         this.selector.innerHTML = temp;
 
-        document.querySelector("#NewMessage").addEventListener( 'click', () => {
+        document.querySelector("#NewNote").addEventListener( 'click', () => {
             this.show();
         });
 
@@ -139,7 +139,7 @@ class VList {
     private list: VNoteList;
     private content: ViewNote;
     private mailing: VSavingNote;
-    private selector = document.querySelector("#mailList");
+    private selector = document.querySelector("#noteList");
 
     public constructor(){
         this.list = new VNoteList([]);
@@ -149,7 +149,7 @@ class VList {
 
     public show(){
         let temp =`
-        <table id="mailBox">
+        <table id="noteBox">
             <thead>
             <tr>
                 <th>Message title</th>
@@ -165,7 +165,7 @@ class VList {
 `;
         this.selector.innerHTML = temp;
 
-        document.querySelector("#mailBox").addEventListener( 'click', (event) => {
+        document.querySelector("#noteBox").addEventListener( 'click', (event) => {
             var target = event.target as HTMLElement;
             var x =target.parentElement;
             var id = +x.id;
@@ -201,7 +201,9 @@ class VList {
             var id = this.content.getNote().getId()
             if(typeof id != "undefined") {
                 app.deleteNote(id);
+                this.mailing.show();
             }
+
         });
 
         document.querySelector("#edit").addEventListener( 'click', (event) => {
@@ -210,17 +212,17 @@ class VList {
             let temp = `
          <span id="formularz">
             <p>Podaj nowy tytuł wiadomości:</p>
-            <input id="Title" type="text">
+            <input id="Title" type="text" value="${this.content.getNote().getSubject()}">
             <p>Podaj nową kategorie:</p>
-            <input id="Category" type="text">
+            <input id="Category" type="text" value="${this.content.getNote().getCategory()}">
             <p>Podaj nową etykiete:</p>
-            <input id="Tag" type="text">
+            <input id="Tag" type="text" value="${this.content.getNote().getTag()}">
             <p>Wpisz nowy tekst wiadomości:</p>
-            <textarea id="Body" cols="8" rows="8"></textarea>
+            <textarea id="Body" cols="8" rows="8">${this.content.getNote().getBody()}</textarea>
             <input id="Edit" class="btn" type="submit" value="Edytuj">
         </span>    
 `;
-            document.querySelector('#message').innerHTML = temp;
+            document.querySelector('#note').innerHTML = temp;
 
             document.querySelector("#Edit").addEventListener( 'click', (event) => {
                 let title = (<HTMLInputElement>document.getElementById("Title")).value;

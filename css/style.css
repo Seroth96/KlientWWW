@@ -115,7 +115,7 @@ ul#menu li {
     padding: 1rem;
 }
 
-#message {
+#note {
     border: 3px solid #006666;
     background-color: white;
     float: left;
@@ -125,7 +125,7 @@ ul#menu li {
     overflow: auto;
 }
 
-#mailList {
+#noteList {
     border: 3px solid #006666;
     background-color: white;
     float: left;

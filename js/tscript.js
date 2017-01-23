@@ -17,13 +17,15 @@ class Api {
         this.password = password;
     }
     isLogged() {
-        if (this.token.length > 0)
-            return true;
+        if (this.token != "") {
+            if (this.token.length > 0)
+                return true;
+        }
         return false;
     }
     logout() {
         this.token = "";
-        document.location.replace("login.html");
+        document.location.replace("NotesApp.html");
     }
     getCurrentNote() {
         return this.currentNote;
@@ -49,7 +51,6 @@ class Api {
                 return __awaiter(this, void 0, void 0, function* () {
                     yield response.json().then(function (data) {
                         that.token = data.access_token;
-                        console.log(data);
                     });
                 });
             });
@@ -72,7 +73,7 @@ class Api {
             yield fetch(request).then(function (response) {
                 return __awaiter(this, void 0, void 0, function* () {
                     yield response.json().then(function (data) {
-                        console.log(data);
+                        alert(data.message);
                     });
                 });
             });
@@ -91,8 +92,6 @@ class Api {
             yield fetch(request).then(function (response) {
                 return __awaiter(this, void 0, void 0, function* () {
                     yield response.json().then(function (row) {
-                        console.log(row);
-                        console.log(row.notes.length);
                         for (let i = 0; i < row.notes.length; i++) {
                             notes.push(new Note(row.notes[i].body, row.notes[i].title, row.notes[i].category_id, row.notes[i].tag_id, row.notes[i].id, row.notes[i].user_id));
                         }
@@ -117,8 +116,6 @@ class Api {
             yield fetch(request).then(function (response) {
                 return __awaiter(this, void 0, void 0, function* () {
                     yield response.json().then(function (row) {
-                        console.log(row);
-                        console.log(row.notes.length);
                         for (let i = 0; i < row.notes.length; i++) {
                             notes.push(new Note(row.notes[i].body, row.notes[i].title, row.notes[i].category_id, row.notes[i].tag_id, row.notes[i].id, row.notes[i].user_id));
                         }
@@ -143,8 +140,6 @@ class Api {
             yield fetch(request).then(function (response) {
                 return __awaiter(this, void 0, void 0, function* () {
                     yield response.json().then(function (row) {
-                        console.log(row);
-                        console.log(row.notes.length);
                         for (let i = 0; i < row.notes.length; i++) {
                             notes.push(new Note(row.notes[i].body, row.notes[i].title, row.notes[i].category_id, row.notes[i].tag_id, row.notes[i].id, row.notes[i].user_id));
                         }
@@ -178,26 +173,6 @@ class Api {
             });
         });
     }
-    // public async getUsersList() {
-    //     let users: User[] = [];
-    //     let url = this.getUrl('/users/');
-    //     let request = new Request(url, {
-    //         method: 'GET',
-    //         headers: new Headers({
-    //             'token': this.token
-    //         })
-    //     });
-    //     await fetch(request).then(async function (response) {
-    //         await response.json().then(function (row) {
-    //             for (let raw of row) {
-    //                 users.push(new User(raw.uid, raw.username));
-    //             }
-    //             return users;
-    //         });
-    //         return users;
-    //     });
-    //     return users;
-    // }
     send(note) {
         return __awaiter(this, void 0, void 0, function* () {
             let url = this.getUrl('/api/Notes');
@@ -270,7 +245,7 @@ class Api {
     }
 }
 class Note {
-    constructor(body = "No content", title = "No subject", category = "", tag = "inbox", id = 0, user_id = 0) {
+    constructor(body = "No content", title = "No subject", category = "", tag = "", id = 0, user_id = 0) {
         this.body = body;
         this.title = title;
         this.category_id = category;
@@ -355,15 +330,64 @@ class NotesBox {
 class Application {
     constructor(username, password) {
         this.api = new Api(username, password);
-        this.init();
+        if (username != "" && password != "")
+            this.login(username, password);
     }
     init() {
         return __awaiter(this, void 0, void 0, function* () {
+            this.initializeView();
             this.mailList = new VList();
-            yield this.api.register();
-            yield this.api.login();
             this.data = new NotesBox(this.api);
             yield this.getNotesList();
+        });
+    }
+    register(username, password) {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.api = new Api(username, password);
+            yield this.api.register();
+        });
+    }
+    initializeView() {
+        document.body.innerHTML = `
+                        <nav>
+                            <button id="NewNote" class="btn">New note</button>
+                            <button id="Logout" class="btn">Logout</button>
+                        </nav>
+                        
+                        <section class="filter">
+                            <ul id="menu">
+                                <li><select id="SortBy">
+                                    <option value="Category">Category</option>
+                                    <option value="Tag">Tag</option>
+                                </select></li>
+                                <li><input id="SortCredentials" type="text"></li>
+                                <li><button id="Filter" class="btn">Filter</button></li>
+                            </ul>
+                        </section>
+                        
+                        <section class="container">
+                            <div id="note" class="left-half">
+                        
+                            </div>
+                        
+                            <div id="noteList" class="right-half">
+                        
+                        
+                            </div>
+                        </section>
+                        
+                        
+                        <footer>
+                            &copy; All rights reserved
+                        </footer>
+            `;
+    }
+    login(username, password) {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.api = new Api(username, password);
+            yield this.api.login();
+            if (this.isLogged())
+                this.init();
         });
     }
     logout() {
@@ -371,6 +395,11 @@ class Application {
     }
     getData() {
         return this.data;
+    }
+    isLogged() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.api.isLogged();
+        });
     }
     getNotesList() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -415,19 +444,17 @@ class Application {
         });
     }
 }
-let app = new Application("bach", "to-nie-ja");
+let app = new Application("", "");
 if (document.getElementById('#container_login') == null) {
     document.querySelector('#submit_register').addEventListener('click', (e) => {
         let username = document.getElementById("login").value;
         let password = document.getElementById("password").value;
-        let app = new Application(username, password);
-        console.log("klik!");
+        app.register(username, password);
     });
     document.querySelector('#submit_login').addEventListener('click', (e) => {
         let username = document.getElementById("login").value;
         let password = document.getElementById("password").value;
-        console.log("klik!2");
-        document.location.href = "index_pl.html";
+        app = new Application(username, password);
     });
 }
 //# sourceMappingURL=tscript.js.map
