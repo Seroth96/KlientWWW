@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "baseUrl": "../",
+    "typeRoots": [
+      "../"
+    ],
+    "types": [],
+    "sourceMap": true,
+    "inlineSources": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
